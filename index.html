@@ -1,19 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta name="google-site-verification" content="dgUiDBjzjbT-0v0OHTBTVfxbjhiswv5EQUzNtlvuhkw" />
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ProCV — Professional CV Generator</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <!-- ===================== IDENTITY ===================== -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="dgUiDBjzjbT-0v0OHTBTVfxbjhiswv5EQUzNtlvuhkw"/>
+
+  <!-- ===================== SEO — TITLE ===================== -->
+  <title>Free CV Generator 2026 | Create Professional Resume Online</title>
+
+  <!-- ===================== SEO — META ===================== -->
+  <meta name="description" content="Create a professional CV online for free with our easy-to-use CV generator. Build your resume in minutes, preview in real-time, and download as PDF. No sign-up required. The best free CV maker and resume builder for 2026."/>
+  <meta name="keywords" content="CV generator, free CV maker, resume builder, create CV online, professional CV generator, free resume maker, CV builder 2026, online CV creator, PDF resume download, professional resume builder, curriculum vitae maker"/>
+  <meta name="author" content="Hafidh Omar Othman"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#4f46e5"/>
+  <link rel="canonical" href="https://generator-cv.github.io/cv-generator/"/>
+
+  <!-- ===================== SEO — OPEN GRAPH ===================== -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://generator-cv.github.io/cv-generator/"/>
+  <meta property="og:title" content="Free CV Generator 2026 | Create Professional Resume Online"/>
+  <meta property="og:description" content="Create a professional CV online for free. Build, preview in real-time, and download as PDF in minutes. No registration needed."/>
+  <meta property="og:site_name" content="ProCV Generator"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- ===================== SEO — TWITTER CARD ===================== -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Free CV Generator 2026 | Create Professional Resume Online"/>
+  <meta name="twitter:description" content="The easiest free online CV maker. Build your professional resume in minutes and download as PDF — no account needed."/>
+
+  <!-- ===================== SEO — STRUCTURED DATA ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ProCV Generator",
+    "url": "https://generator-cv.github.io/cv-generator/",
+    "description": "Free online CV generator to create professional resumes instantly. Download as PDF with no registration required.",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "creator": { "@type": "Person", "name": "Hafidh Omar Othman" }
+  }
+  </script>
+
+  <!-- ===================== FAQ STRUCTURED DATA ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is a CV generator?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A CV generator is an online tool that helps you create a professional curriculum vitae quickly. Fill in your details and download a formatted PDF instantly." } },
+      { "@type": "Question", "name": "Is this CV generator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our CV generator is 100% free. No hidden fees, no watermarks, no credit card required." } },
+      { "@type": "Question", "name": "How can I download my CV?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Fill in the form, then click the Download PDF button in the live preview panel. Your CV saves to your device instantly." } },
+      { "@type": "Question", "name": "Do I need to register?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No registration or account is needed. Start building your CV right away without providing an email address." } },
+      { "@type": "Question", "name": "Can I edit my CV later?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, while the page is open all edits appear live. Download your PDF before closing the browser, as data is not stored between sessions." } }
+    ]
+  }
+  </script>
+
+  <!-- ===================== FONTS & EXTERNAL LIBS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <style>
-/* ==============================
+/* ============================================================
    RESET & CSS VARIABLES
-================================ */
+============================================================ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{
   --navy:#0f172a;
@@ -52,9 +115,9 @@ body{font-family:'DM Sans',sans-serif;background:#f8fafc;color:var(--navy);line-
 ::-webkit-scrollbar-track{background:#f1f5f9;}
 ::-webkit-scrollbar-thumb{background:var(--indigo2);border-radius:99px;}
 
-/* ==============================
+/* ============================================================
    NAV
-================================ */
+============================================================ */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   background:rgba(15,23,42,.96);
@@ -78,23 +141,23 @@ nav{
 }
 .nav-links{display:flex;align-items:center;gap:.25rem;}
 .nav-link{
-  padding:.45rem 1rem;border-radius:8px;
-  color:var(--slate2);font-size:.875rem;font-weight:500;
+  padding:.45rem .85rem;border-radius:8px;
+  color:var(--slate2);font-size:.84rem;font-weight:500;
   text-decoration:none;transition:all var(--transition);
-  border:1px solid transparent;
+  border:1px solid transparent;white-space:nowrap;
 }
 .nav-link:hover{color:#fff;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.1);}
 .nav-cta{
   background:var(--grad1);color:#fff!important;
-  padding:.45rem 1.25rem!important;
+  padding:.45rem 1.1rem!important;
   box-shadow:0 0 20px rgba(99,102,241,.4);
 }
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 0 30px rgba(99,102,241,.6);}
 .mob-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}
 
-/* ==============================
+/* ============================================================
    HERO
-================================ */
+============================================================ */
 .hero{
   min-height:100vh;
   background:var(--grad2);
@@ -127,7 +190,7 @@ nav{
 .hero-badge-dot{width:7px;height:7px;border-radius:50%;background:var(--indigo2);animation:pulse 2s infinite;}
 .hero h1{
   font-family:'Playfair Display',serif;
-  font-size:clamp(2.8rem,6vw,4.5rem);font-weight:800;line-height:1.1;
+  font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;line-height:1.1;
   color:#fff;margin-bottom:1.25rem;animation:fadeUp .6s .1s ease both;
 }
 .hero h1 span{
@@ -135,7 +198,7 @@ nav{
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .hero p{
-  font-size:1.125rem;color:var(--slate2);max-width:560px;margin:0 auto 2.5rem;
+  font-size:1.1rem;color:var(--slate2);max-width:580px;margin:0 auto 2.5rem;
   animation:fadeUp .6s .2s ease both;
 }
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .6s .3s ease both;}
@@ -144,11 +207,11 @@ nav{
   animation:fadeUp .6s .4s ease both;
 }
 .hero-stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:#fff;}
-.hero-stat-label{font-size:.8rem;color:var(--slate2);text-transform:uppercase;letter-spacing:.08em;}
+.hero-stat-label{font-size:.78rem;color:var(--slate2);text-transform:uppercase;letter-spacing:.08em;}
 
-/* ==============================
+/* ============================================================
    BUTTONS
-================================ */
+============================================================ */
 .btn{
   display:inline-flex;align-items:center;gap:.5rem;
   padding:.75rem 1.75rem;border-radius:10px;
@@ -170,9 +233,9 @@ nav{
 .btn-danger:hover{transform:translateY(-1px);}
 .btn-sm{padding:.5rem 1rem;font-size:.83rem;}
 
-/* ==============================
+/* ============================================================
    LAYOUT / SECTIONS
-================================ */
+============================================================ */
 section{padding:5rem 0;}
 .container{max-width:1320px;margin:0 auto;padding:0 2rem;}
 .section-header{text-align:center;margin-bottom:3.5rem;}
@@ -189,11 +252,11 @@ section{padding:5rem 0;}
   color:var(--navy);margin-bottom:.75rem;line-height:1.2;
 }
 .section-title span{color:var(--indigo);}
-.section-sub{color:var(--slate);font-size:1.05rem;max-width:520px;margin:0 auto;}
+.section-sub{color:var(--slate);font-size:1.05rem;max-width:540px;margin:0 auto;}
 
-/* ==============================
+/* ============================================================
    CARD
-================================ */
+============================================================ */
 .card{
   background:var(--white);border-radius:var(--radius-lg);
   box-shadow:var(--shadow-md);border:1px solid rgba(0,0,0,.04);
@@ -215,9 +278,9 @@ section{padding:5rem 0;}
 .card-header p{font-size:.8rem;color:var(--slate);margin-top:.1rem;}
 .card-body{padding:1.75rem;}
 
-/* ==============================
+/* ============================================================
    FORM ELEMENTS
-================================ */
+============================================================ */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
 .form-grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
 .form-grid.cols-4{grid-template-columns:1fr 1fr 1fr 1fr;}
@@ -250,9 +313,9 @@ textarea{resize:vertical;min-height:80px;line-height:1.6;}
   margin-bottom:1rem;display:flex;align-items:center;gap:.4rem;
 }
 
-/* ==============================
+/* ============================================================
    DYNAMIC ENTRIES
-================================ */
+============================================================ */
 .entries-wrap{display:flex;flex-direction:column;gap:.9rem;}
 .entry-card{
   background:var(--light);border-radius:var(--radius);
@@ -274,17 +337,17 @@ textarea{resize:vertical;min-height:80px;line-height:1.6;}
 }
 .add-btn:hover{border-color:var(--indigo);background:rgba(79,70,229,.08);}
 
-/* ==============================
+/* ============================================================
    MAIN CV LAYOUT
-================================ */
+============================================================ */
 #cv-section{background:#f8fafc;}
 .cv-layout{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start;}
 .form-col{display:flex;flex-direction:column;gap:1.4rem;}
 .preview-col{position:sticky;top:80px;}
 
-/* ==============================
+/* ============================================================
    PREVIEW PANEL
-================================ */
+============================================================ */
 .preview-wrap{
   background:#fff;border-radius:var(--radius-lg);
   box-shadow:var(--shadow-xl);border:1px solid rgba(0,0,0,.05);
@@ -302,176 +365,273 @@ textarea{resize:vertical;min-height:80px;line-height:1.6;}
 .preview-btns{display:flex;gap:.5rem;flex-wrap:wrap;}
 .preview-scroll{max-height:calc(100vh - 190px);overflow-y:auto;}
 
-/* ==============================
+/* ============================================================
    CV DOCUMENT
-================================ */
-#cv-doc{
-  font-family:'DM Sans',sans-serif;
-  background:#fff;min-height:900px;
-}
-
-/* CV Header */
+============================================================ */
+#cv-doc{font-family:'DM Sans',sans-serif;background:#fff;min-height:900px;}
 .cv-top{
   background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 55%,#6366f1 100%);
   padding:2.25rem 2.5rem 1.75rem;position:relative;overflow:hidden;
 }
-.cv-top::before{
-  content:'';position:absolute;top:-50px;right:-50px;
-  width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.07);
-}
-.cv-top::after{
-  content:'';position:absolute;bottom:-70px;left:-30px;
-  width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.05);
-}
-.cv-name{
-  font-family:'Playfair Display',serif;
-  font-size:1.9rem;font-weight:800;color:#fff;line-height:1.15;margin-bottom:.25rem;
-  position:relative;z-index:1;
-}
-.cv-contacts-row{
-  display:flex;flex-wrap:wrap;gap:.45rem .9rem;margin-top:1rem;
-  position:relative;z-index:1;
-}
-.cv-ci{
-  display:flex;align-items:center;gap:.3rem;
-  font-size:.76rem;color:rgba(255,255,255,.88);font-weight:500;
-}
-
-/* CV Body */
+.cv-top::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.07);}
+.cv-top::after{content:'';position:absolute;bottom:-70px;left:-30px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.05);}
+.cv-name{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:800;color:#fff;line-height:1.15;margin-bottom:.25rem;position:relative;z-index:1;}
+.cv-contacts-row{display:flex;flex-wrap:wrap;gap:.45rem .9rem;margin-top:1rem;position:relative;z-index:1;}
+.cv-ci{display:flex;align-items:center;gap:.3rem;font-size:.76rem;color:rgba(255,255,255,.88);font-weight:500;}
 .cv-inner{padding:0 2rem 1.75rem;}
 .cv-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 2rem;}
 .cv-left{border-right:1px solid var(--light);padding-right:1.5rem;padding-top:1.5rem;}
 .cv-right{padding-top:1.5rem;}
 .cv-full{grid-column:1/-1;padding-top:1.25rem;}
-
-/* CV Section Heading */
-.cv-sh{
-  font-size:.68rem;font-weight:700;color:var(--indigo);
-  text-transform:uppercase;letter-spacing:.12em;
-  border-bottom:2px solid rgba(79,70,229,.18);
-  padding-bottom:.3rem;margin-bottom:.75rem;
-}
-/* Personal details table in CV */
+.cv-sh{font-size:.68rem;font-weight:700;color:var(--indigo);text-transform:uppercase;letter-spacing:.12em;border-bottom:2px solid rgba(79,70,229,.18);padding-bottom:.3rem;margin-bottom:.75rem;}
 .cv-detail-table{width:100%;border-collapse:collapse;}
 .cv-detail-table tr td{padding:.22rem 0;font-size:.8rem;vertical-align:top;}
 .cv-detail-table tr td:first-child{color:var(--slate);font-weight:600;width:38%;padding-right:.5rem;}
 .cv-detail-table tr td:last-child{color:var(--navy);font-weight:500;}
-/* Education blocks */
 .cv-edu-block{margin-bottom:.9rem;}
 .cv-edu-level{font-size:.7rem;font-weight:700;color:var(--violet);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem;}
 .cv-edu-name{font-size:.84rem;font-weight:700;color:var(--navy);}
 .cv-edu-qual{font-size:.78rem;color:var(--indigo);font-weight:600;font-style:italic;}
 .cv-edu-years{font-size:.75rem;color:var(--slate);}
-/* Hobbies */
 .cv-hobbies-list{list-style:none;display:flex;flex-direction:column;gap:.25rem;}
 .cv-hobbies-list li{font-size:.8rem;color:var(--navy3);padding-left:.9rem;position:relative;}
 .cv-hobbies-list li::before{content:'▸';position:absolute;left:0;color:var(--indigo);font-size:.7rem;}
-/* Work experience */
 .cv-exp-block{margin-bottom:1rem;}
 .cv-exp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;}
 .cv-exp-title{font-size:.86rem;font-weight:700;color:var(--navy);}
 .cv-exp-dur{font-size:.74rem;color:var(--slate);white-space:nowrap;font-weight:500;}
 .cv-exp-company{font-size:.8rem;color:var(--indigo);font-weight:600;margin:.1rem 0;}
 .cv-exp-resp{font-size:.78rem;color:var(--slate);line-height:1.65;margin-top:.25rem;}
-/* Referees */
 .cv-ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem 1.25rem;}
 .cv-ref-block{padding:.6rem .75rem;background:rgba(79,70,229,.04);border-radius:8px;border-left:3px solid var(--indigo);}
 .cv-ref-name{font-size:.84rem;font-weight:700;color:var(--navy);}
 .cv-ref-info{font-size:.76rem;color:var(--slate);line-height:1.6;}
 .cv-ref-info span{color:var(--navy3);}
-
-/* Empty preview */
-.empty-state{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  height:420px;text-align:center;color:var(--slate);gap:.75rem;
-}
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:420px;text-align:center;color:var(--slate);gap:.75rem;}
 .empty-icon{font-size:3rem;opacity:.25;}
 .empty-text{font-size:.88rem;opacity:.55;line-height:1.6;}
 
-/* ==============================
+/* ============================================================
    ALERT OVERLAY
-================================ */
-.overlay{
-  position:fixed;inset:0;z-index:9999;
-  background:rgba(15,23,42,.65);backdrop-filter:blur(8px);
-  display:flex;align-items:center;justify-content:center;padding:1rem;
-  opacity:0;pointer-events:none;transition:opacity .3s ease;
-}
+============================================================ */
+.overlay{position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,.65);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .3s ease;}
 .overlay.show{opacity:1;pointer-events:all;}
-.alert-box{
-  background:#fff;border-radius:var(--radius-xl);
-  padding:2.5rem 2.25rem;max-width:400px;width:100%;text-align:center;
-  transform:translateY(24px);transition:transform .3s ease;
-  box-shadow:var(--shadow-xl);
-}
+.alert-box{background:#fff;border-radius:var(--radius-xl);padding:2.5rem 2.25rem;max-width:400px;width:100%;text-align:center;transform:translateY(24px);transition:transform .3s ease;box-shadow:var(--shadow-xl);}
 .overlay.show .alert-box{transform:translateY(0);}
 .alert-ico{font-size:2.8rem;margin-bottom:.85rem;}
 .alert-ttl{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:.4rem;}
 .alert-sub{color:var(--slate);font-size:.875rem;margin-bottom:1.6rem;line-height:1.6;}
-.alert-progress{
-  height:4px;background:var(--light);border-radius:99px;overflow:hidden;margin-bottom:1.4rem;
-  display:none;
-}
+.alert-progress{height:4px;background:var(--light);border-radius:99px;overflow:hidden;margin-bottom:1.4rem;display:none;}
 .alert-progress.show{display:block;}
-.alert-progress-bar{
-  height:100%;background:var(--grad1);border-radius:99px;
-  width:0%;transition:width 2.5s linear;
-}
+.alert-progress-bar{height:100%;background:var(--grad1);border-radius:99px;width:0%;transition:width 2.5s linear;}
 
-/* ==============================
-   PROGRESS BAR
-================================ */
-.progress-bar{
-  position:fixed;top:64px;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--indigo),var(--violet),var(--gold2));
-  transform-origin:left;transform:scaleX(0);z-index:999;
-  transition:transform .1s linear;
-}
+/* ============================================================
+   SCROLL PROGRESS BAR
+============================================================ */
+.progress-bar{position:fixed;top:64px;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--indigo),var(--violet),var(--gold2));transform-origin:left;transform:scaleX(0);z-index:999;transition:transform .1s linear;}
 
-/* ==============================
+/* ============================================================
+   LIVE STATS BAR
+============================================================ */
+.live-bar{
+  background:var(--navy2);
+  padding:.9rem 2rem;
+  display:flex;align-items:center;justify-content:center;
+  gap:2rem;flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+.live-stat{
+  display:flex;align-items:center;gap:.55rem;
+  font-size:.83rem;color:var(--slate2);font-weight:500;
+}
+.live-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--emerald);animation:pulse 2s infinite;flex-shrink:0;
+}
+.live-dot.amber{background:var(--gold2);}
+.live-dot.violet{background:var(--indigo2);}
+.live-stat strong{color:#fff;font-weight:700;}
+
+/* ============================================================
+   WHY US SECTION
+============================================================ */
+#why-us{background:#fff;}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+.why-card{
+  background:linear-gradient(145deg,#f8fafc 0%,#eef2ff 100%);
+  border:1px solid rgba(79,70,229,.1);
+  border-radius:var(--radius-lg);
+  padding:2rem 1.75rem;
+  text-align:center;
+  position:relative;overflow:hidden;
+  transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.why-card::after{
+  content:'';position:absolute;inset:0;
+  background:var(--grad1);opacity:0;
+  transition:opacity .3s ease;
+  border-radius:var(--radius-lg);
+  pointer-events:none;
+}
+.why-card:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow-lg);
+  border-color:rgba(79,70,229,.3);
+}
+.why-card:hover::after{opacity:.04;}
+.why-card-icon{
+  font-size:2.4rem;margin-bottom:1rem;
+  display:block;position:relative;z-index:1;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1);
+}
+.why-card:hover .why-card-icon{transform:scale(1.2) rotate(-5deg);}
+.why-card h3{
+  font-size:1rem;font-weight:700;color:var(--navy);
+  margin-bottom:.5rem;position:relative;z-index:1;
+}
+.why-card p{font-size:.86rem;color:var(--slate);line-height:1.7;position:relative;z-index:1;}
+
+/* ============================================================
+   CAREER TIPS SECTION
+============================================================ */
+#tips{background:linear-gradient(180deg,#eef2ff 0%,#f8fafc 100%);}
+.tip-card{
+  max-width:820px;margin:0 auto;
+  background:#fff;border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-xl);
+  padding:3rem 3.5rem;text-align:center;
+  border:1px solid rgba(79,70,229,.08);
+  position:relative;overflow:hidden;
+}
+.tip-card::before{
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:250px;height:250px;border-radius:50%;
+  background:radial-gradient(circle,rgba(79,70,229,.07),transparent 70%);
+  pointer-events:none;
+}
+.tip-card::after{
+  content:'';position:absolute;bottom:-60px;left:-60px;
+  width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,58,237,.06),transparent 70%);
+  pointer-events:none;
+}
+.tip-emoji{font-size:3.2rem;margin-bottom:1.25rem;display:block;position:relative;z-index:1;}
+.tip-body{
+  font-family:'Playfair Display',serif;
+  font-size:1.22rem;font-weight:600;color:var(--navy);
+  line-height:1.7;min-height:90px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+  transition:opacity .35s ease,transform .35s ease;
+}
+.tip-body.fade-out{opacity:0;transform:translateY(8px);}
+.tip-counter{
+  font-size:.78rem;color:var(--slate);font-weight:600;
+  text-transform:uppercase;letter-spacing:.09em;
+  margin:1.5rem 0 1rem;position:relative;z-index:1;
+}
+.tip-dots-row{display:flex;gap:.45rem;justify-content:center;margin-bottom:1.75rem;position:relative;z-index:1;}
+.tip-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--slate3);transition:all .3s ease;cursor:pointer;
+}
+.tip-dot.active{background:var(--indigo);transform:scale(1.4);}
+.tip-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;}
+.tip-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1.1rem;margin-top:3rem;
+}
+.tip-mini{
+  background:#fff;border-radius:var(--radius);
+  padding:1.35rem;text-align:left;
+  border:1px solid rgba(0,0,0,.05);
+  display:flex;gap:.9rem;align-items:flex-start;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.tip-mini:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(79,70,229,.14);}
+.tip-mini-icon{font-size:1.6rem;flex-shrink:0;line-height:1;}
+.tip-mini h4{font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:.3rem;}
+.tip-mini p{font-size:.8rem;color:var(--slate);line-height:1.6;}
+
+/* ============================================================
+   FAQ SECTION
+============================================================ */
+#faq{background:#fff;}
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:.9rem;}
+.faq-item{
+  border:1px solid rgba(79,70,229,.1);
+  border-radius:var(--radius);overflow:hidden;
+  transition:box-shadow .3s ease;
+}
+.faq-item:hover{box-shadow:var(--shadow-md);}
+.faq-btn{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.2rem 1.5rem;
+  background:linear-gradient(135deg,#f8fafc,#eef2ff);
+  border:none;cursor:pointer;font-family:'DM Sans',sans-serif;
+  font-size:.95rem;font-weight:700;color:var(--navy);text-align:left;
+  transition:background .25s ease;
+}
+.faq-btn:hover{background:linear-gradient(135deg,#eef2ff,#e0e7ff);}
+.faq-btn[aria-expanded="true"]{background:var(--grad1);color:#fff;}
+.faq-arrow{font-size:1.15rem;flex-shrink:0;transition:transform .35s ease;line-height:1;}
+.faq-btn[aria-expanded="true"] .faq-arrow{transform:rotate(180deg);}
+.faq-answer{
+  max-height:0;overflow:hidden;
+  background:#fff;
+  transition:max-height .42s ease,padding .3s ease;
+  font-size:.9rem;color:var(--slate);line-height:1.8;padding:0 1.5rem;
+}
+.faq-answer.open{max-height:320px;padding:1.25rem 1.5rem;}
+
+/* ============================================================
    PRICING
-================================ */
+============================================================ */
 #pricing{background:linear-gradient(180deg,#f8fafc 0%,#eef2ff 100%);}
 .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:780px;margin:0 auto;}
-.price-card{
-  background:#fff;border-radius:var(--radius-xl);
-  padding:2.25rem;box-shadow:var(--shadow-md);
-  border:2px solid transparent;transition:all .3s ease;position:relative;overflow:hidden;
-}
+.price-card{background:#fff;border-radius:var(--radius-xl);padding:2.25rem;box-shadow:var(--shadow-md);border:2px solid transparent;transition:all .3s ease;position:relative;overflow:hidden;}
 .price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
 .price-card.featured{border-color:var(--indigo);box-shadow:var(--shadow-xl);}
-.price-badge{
-  position:absolute;top:1.25rem;right:1.25rem;
-  background:var(--grad1);color:#fff;
-  padding:.2rem .65rem;border-radius:99px;
-  font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-}
+.price-badge{position:absolute;top:1.25rem;right:1.25rem;background:var(--grad1);color:#fff;padding:.2rem .65rem;border-radius:99px;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
 .price-plan{font-size:.76rem;font-weight:700;color:var(--indigo);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem;}
 .price-amount{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:800;color:var(--navy);}
 .price-amount span{font-size:.95rem;font-weight:500;color:var(--slate);}
 .price-desc{font-size:.86rem;color:var(--slate);margin:.65rem 0 1.4rem;}
 .price-features{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.9rem;}
 .price-features li{display:flex;align-items:center;gap:.55rem;font-size:.86rem;color:var(--navy3);font-weight:500;}
-.price-features li::before{
-  content:'✓';width:19px;height:19px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:.68rem;font-weight:700;flex-shrink:0;
-}
+.price-features li::before{content:'✓';width:19px;height:19px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:700;flex-shrink:0;}
 .price-card.featured .price-features li::before{background:var(--indigo);color:#fff;}
 .price-card:not(.featured) .price-features li::before{background:rgba(79,70,229,.1);color:var(--indigo);}
 
-/* ==============================
+/* ============================================================
    FOOTER
-================================ */
+============================================================ */
 footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
 .footer-in{max-width:1320px;margin:0 auto;}
-.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem;}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2.25rem;}
 .footer-brand{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:.65rem;}
 .footer-desc{font-size:.86rem;color:var(--slate2);line-height:1.75;}
-.footer-col-title{font-size:.76rem;font-weight:700;color:var(--slate2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col-title{font-size:.76rem;font-weight:700;color:var(--slate2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.85rem;}
+.footer-nav-strip{
+  display:flex;flex-wrap:wrap;gap:.4rem .15rem;
+  padding:1.1rem 0;
+  border-top:1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  margin-bottom:1.5rem;
+  align-items:center;
+}
 .footer-links-col{display:flex;flex-direction:column;gap:.45rem;}
-.footer-link{color:var(--slate3);font-size:.86rem;text-decoration:none;transition:color var(--transition);}
-.footer-link:hover{color:#fff;}
+.footer-link{
+  color:var(--slate3);font-size:.84rem;text-decoration:none;
+  transition:all var(--transition);
+  padding:.35rem .8rem;border-radius:7px;
+  border:1px solid transparent;white-space:nowrap;
+}
+.footer-link:hover{color:#fff;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.09);}
 .footer-contact-row{display:flex;align-items:flex-start;gap:.55rem;margin-bottom:.65rem;}
 .footer-contact-icon{font-size:.95rem;margin-top:.05rem;flex-shrink:0;}
 .footer-contact-val{font-size:.86rem;color:var(--slate3);line-height:1.5;}
@@ -479,18 +639,12 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
 .footer-copy{font-size:.8rem;color:var(--slate);}
 .footer-copy a{color:var(--indigo2);text-decoration:none;}
-.scroll-top-btn{
-  width:38px;height:38px;border-radius:9px;
-  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
-  color:#fff;cursor:pointer;font-size:1rem;
-  display:flex;align-items:center;justify-content:center;
-  transition:all var(--transition);
-}
+.scroll-top-btn{width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all var(--transition);}
 .scroll-top-btn:hover{background:var(--indigo);border-color:var(--indigo);}
 
-/* ==============================
-   WA FLOAT
-================================ */
+/* ============================================================
+   WHATSAPP FLOAT
+============================================================ */
 .wa-float{
   position:fixed;bottom:2rem;right:2rem;z-index:900;
   display:flex;align-items:center;gap:.55rem;
@@ -504,46 +658,54 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
 .wa-float:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(37,211,102,.5);}
 .wa-float svg{width:20px;height:20px;fill:currentColor;}
 
-/* ==============================
+/* ============================================================
    ANIMATIONS
-================================ */
+============================================================ */
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.35);opacity:.7;}}
-
 .fade-up{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease;}
 .fade-up.visible{opacity:1;transform:translateY(0);}
 
-/* ==============================
+/* ============================================================
    RESPONSIVE
-================================ */
+============================================================ */
 @media(max-width:1100px){
   .cv-layout{grid-template-columns:1fr;}
   .preview-col{position:static;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:900px){
+  .tip-card{padding:2rem 1.75rem;}
 }
 @media(max-width:768px){
-  .nav-links{display:none;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--navy);padding:1rem;gap:.2rem;}
+  .nav-links{display:none;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--navy);padding:1rem;gap:.2rem;z-index:999;}
   .nav-links.open{display:flex;}
   .mob-toggle{display:flex;}
   .form-grid,.form-grid.cols-3,.form-grid.cols-4{grid-template-columns:1fr;}
   .form-group.full{grid-column:1;}
   .pricing-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
+  .footer-nav-strip{gap:.35rem .1rem;}
   .cv-cols{grid-template-columns:1fr;}
   .cv-left{border-right:none;border-bottom:1px solid var(--light);padding-right:0;padding-bottom:1rem;}
   .cv-ref-grid{grid-template-columns:1fr;}
   .preview-btns{justify-content:center;}
   .footer-bottom{flex-direction:column;text-align:center;}
+  .why-grid{grid-template-columns:1fr;}
+  .tip-grid{grid-template-columns:1fr;}
+  .live-bar{gap:1rem;}
 }
 @media(max-width:480px){
   .hero h1{font-size:2.2rem;}
   .hero-btns{flex-direction:column;align-items:center;}
   .hero-stats{gap:1.5rem;}
   .card-body{padding:1.25rem;}
+  .tip-card{padding:1.75rem 1.25rem;}
 }
 @media print{
   nav,.preview-bar,#pricing,footer,.wa-float,.overlay,.progress-bar,
-  .form-col,.preview-btns,.hero{display:none!important;}
+  .live-bar,.form-col,.preview-btns,.hero,#why-us,#tips,#faq{display:none!important;}
   body,html{background:#fff!important;}
   .preview-col{position:static!important;}
   .preview-wrap,.preview-scroll{overflow:visible!important;max-height:none!important;box-shadow:none!important;border:none!important;}
@@ -553,7 +715,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
 </head>
 <body>
 
-<!-- Progress Bar -->
+<!-- Scroll Progress Bar -->
 <div class="progress-bar" id="prog"></div>
 
 <!-- Alert Overlay -->
@@ -567,41 +729,56 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
   </div>
 </div>
 
-<!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV." target="_blank" rel="noopener" aria-label="Order via WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.906 6.906 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.123 1.519 5.862L0 24l6.335-1.499A11.957 11.957 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.36-.214-3.732.883.897-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+<!-- WhatsApp Float Button -->
+<a class="wa-float" href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV." target="_blank" rel="noopener" aria-label="Order professional CV via WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.906 6.906 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.123 1.519 5.862L0 24l6.335-1.499A11.957 11.957 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.36-.214-3.732.883.897-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/>
+  </svg>
   Order Pro CV
 </a>
 
-<!-- ==================== NAV ==================== -->
-<nav id="navbar">
-  <a href="#home" class="nav-brand">
-    <div class="nav-brand-icon">P</div>
+<!-- ================================================================
+     NAV
+================================================================ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="nav-brand" aria-label="ProCV Home">
+    <div class="nav-brand-icon" aria-hidden="true">P</div>
     <span class="nav-brand-text">ProCV</span>
   </a>
   <div class="nav-links" id="nav-links">
     <a href="#cv-section" class="nav-link" onclick="closeNav()">📄 CV Generator</a>
-    <a href="#pricing" class="nav-link" onclick="closeNav()">💎 Pricing</a>
-    <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV." target="_blank" class="nav-link nav-cta" onclick="closeNav()">Order Pro CV →</a>
+    <a href="#why-us"     class="nav-link" onclick="closeNav()">⭐ Why Us</a>
+    <a href="#tips"       class="nav-link" onclick="closeNav()">💡 Career Tips</a>
+    <a href="#faq"        class="nav-link" onclick="closeNav()">❓ FAQ</a>
+    <a href="#pricing"    class="nav-link" onclick="closeNav()">💎 Pricing</a>
+    <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV."
+       target="_blank" rel="noopener" class="nav-link nav-cta" onclick="closeNav()">Order Pro CV →</a>
   </div>
-  <button class="mob-toggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+  <button class="mob-toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
 </nav>
 
-<!-- ==================== HERO ==================== -->
-<section class="hero" id="home">
-  <div class="hero-grid"></div>
+<!-- ================================================================
+     HERO
+================================================================ -->
+<section class="hero" id="home" aria-labelledby="hero-heading">
+  <div class="hero-grid" aria-hidden="true"></div>
   <div class="hero-content">
-    <div class="hero-badge">
-      <span class="hero-badge-dot"></span>
-      Free Professional CV Builder
+    <div class="hero-badge" role="text">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      Free Professional CV Builder — 2026
     </div>
-    <h1>Build Your Dream CV<br><span>in Minutes</span></h1>
-    <p>Create a polished, recruiter-ready CV with our free online generator. Fill in your details, preview in real-time, download as PDF.</p>
+    <!-- H1 is keyword-rich for SEO -->
+    <h1 id="hero-heading">
+      Create Your Professional CV<br>
+      <span>Free Online Resume Builder</span>
+    </h1>
+    <p>Build a polished, recruiter-ready CV with our free online CV generator. Fill in your details, preview in real-time, and download as PDF — no registration required.</p>
     <div class="hero-btns">
-      <a href="#cv-section" class="btn btn-primary">🚀 Build My CV Now</a>
-      <a href="#pricing" class="btn btn-outline">💎 View Premium Plans</a>
+      <a href="#cv-section" class="btn btn-primary">🚀 Build My CV Now — It's Free</a>
+      <a href="#why-us"     class="btn btn-outline">⭐ Why Choose Us?</a>
     </div>
-    <div class="hero-stats">
+    <div class="hero-stats" aria-label="Key statistics">
       <div>
         <div class="hero-stat-num">500+</div>
         <div class="hero-stat-label">CVs Created</div>
@@ -618,13 +795,86 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
   </div>
 </section>
 
-<!-- ==================== CV SECTION ==================== -->
-<section id="cv-section">
+<!-- ================================================================
+     LIVE DYNAMIC STATS BAR
+================================================================ -->
+<div class="live-bar" id="live-bar" role="status" aria-live="polite" aria-label="Live site statistics">
+  <div class="live-stat">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span>🕐 Current Time: <strong id="live-time">--:--:--</strong></span>
+  </div>
+  <div class="live-stat">
+    <span class="live-dot amber" aria-hidden="true"></span>
+    <span>👥 Active Users Today: <strong id="live-users">--</strong></span>
+  </div>
+  <div class="live-stat">
+    <span class="live-dot violet" aria-hidden="true"></span>
+    <span>📄 Total CVs Created: <strong id="live-cvs">500+</strong></span>
+  </div>
+</div>
+
+<!-- ================================================================
+     WHY USE OUR CV GENERATOR
+================================================================ -->
+<section id="why-us" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-title" id="why-heading">Why Use Our <span>Free CV Generator?</span></h2>
+      <p class="section-sub">Everything you need to build a job-winning resume — completely free, fast, and hassle-free.</p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">⚡</span>
+        <h3>Create Your CV in Minutes</h3>
+        <p>Our streamlined form and live preview let you build a complete, professional CV faster than any other tool. No design skills or software required — just type and go.</p>
+      </div>
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">📄</span>
+        <h3>Download as PDF Instantly</h3>
+        <p>Export your finished CV as a high-quality, perfectly formatted PDF with a single click. Ready to email directly to employers and recruiters immediately.</p>
+      </div>
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">💸</span>
+        <h3>Completely Free to Use</h3>
+        <p>Our core CV maker is 100% free — zero hidden fees, no watermarks, no credit card required. Create and download as many CVs as you need at no cost.</p>
+      </div>
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">👁️</span>
+        <h3>Live Real-Time Preview</h3>
+        <p>Watch your CV come alive as you type. Every change appears instantly in the side-by-side preview so you always know exactly what your final CV will look like.</p>
+      </div>
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">🔒</span>
+        <h3>No Registration Needed</h3>
+        <p>Start building immediately — no email address, no account, no personal data collected or stored on our servers. Your privacy is fully protected at all times.</p>
+      </div>
+
+      <div class="why-card fade-up" role="article">
+        <span class="why-card-icon" aria-hidden="true">📱</span>
+        <h3>Works on Any Device</h3>
+        <p>Our resume builder is fully responsive and works beautifully on phones, tablets, and desktops. Build your professional CV anywhere, anytime — no app needed.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CV GENERATOR (MAIN TOOL)
+================================================================ -->
+<section id="cv-section" aria-labelledby="cv-section-heading">
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag">CV Generator</div>
-      <h2 class="section-title">Create Your <span>Professional CV</span></h2>
-      <p class="section-sub">Fill in the form and watch your CV come alive in the live preview on the right.</p>
+      <h2 class="section-title" id="cv-section-heading">Create Your <span>Professional CV</span></h2>
+      <p class="section-sub">Fill in the form below and watch your CV come alive in the live preview on the right.</p>
     </div>
 
     <div class="cv-layout">
@@ -635,7 +885,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <!-- 1. PERSONAL INFORMATION -->
         <div class="card fade-up">
           <div class="card-header">
-            <div class="card-icon">👤</div>
+            <div class="card-icon" aria-hidden="true">👤</div>
             <div>
               <h3>Personal Information</h3>
               <p>Your basic personal and contact details</p>
@@ -644,50 +894,50 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           <div class="card-body">
             <div class="form-grid">
               <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" id="pi-name" placeholder="e.g. Hafidh Omar Othman" oninput="liveUpdate()"/>
-                <span class="err-msg" id="e-pi-name">Full name is required</span>
+                <label for="pi-name">Full Name *</label>
+                <input type="text" id="pi-name" placeholder="e.g. Hafidh Omar Othman" oninput="liveUpdate()" autocomplete="name"/>
+                <span class="err-msg" id="e-pi-name" role="alert">Full name is required</span>
               </div>
               <div class="form-group">
-                <label>Phone Number *</label>
-                <input type="tel" id="pi-phone" placeholder="+255 658 502 920" oninput="liveUpdate()"/>
-                <span class="err-msg" id="e-pi-phone">Phone number is required</span>
+                <label for="pi-phone">Phone Number *</label>
+                <input type="tel" id="pi-phone" placeholder="+255 658 502 920" oninput="liveUpdate()" autocomplete="tel"/>
+                <span class="err-msg" id="e-pi-phone" role="alert">Phone number is required</span>
               </div>
               <div class="form-group">
-                <label>Email Address *</label>
-                <input type="email" id="pi-email" placeholder="you@email.com" oninput="liveUpdate()"/>
-                <span class="err-msg" id="e-pi-email">Valid email is required</span>
+                <label for="pi-email">Email Address *</label>
+                <input type="email" id="pi-email" placeholder="you@email.com" oninput="liveUpdate()" autocomplete="email"/>
+                <span class="err-msg" id="e-pi-email" role="alert">Valid email is required</span>
               </div>
               <div class="form-group">
-                <label>Date of Birth *</label>
-                <input type="date" id="pi-dob" oninput="liveUpdate()"/>
-                <span class="err-msg" id="e-pi-dob">Date of birth is required</span>
+                <label for="pi-dob">Date of Birth *</label>
+                <input type="date" id="pi-dob" oninput="liveUpdate()" autocomplete="bday"/>
+                <span class="err-msg" id="e-pi-dob" role="alert">Date of birth is required</span>
               </div>
               <div class="form-group">
-                <label>Gender *</label>
+                <label for="pi-gender">Gender *</label>
                 <select id="pi-gender" onchange="liveUpdate()">
-                  <option value="">-- Select Gender --</option>
+                  <option value="" selected>-- Select Gender --</option>
                   <option>Male</option>
                   <option>Female</option>
                   <option>Prefer not to say</option>
                 </select>
-                <span class="err-msg" id="e-pi-gender">Please select gender</span>
+                <span class="err-msg" id="e-pi-gender" role="alert">Please select gender</span>
               </div>
               <div class="form-group">
-                <label>Marital Status *</label>
+                <label for="pi-marital">Marital Status *</label>
                 <select id="pi-marital" onchange="liveUpdate()">
-                  <option value="">-- Select Status --</option>
+                  <option value="" selected>-- Select Status --</option>
                   <option>Single</option>
                   <option>Married</option>
                   <option>Divorced</option>
                   <option>Widowed</option>
                 </select>
-                <span class="err-msg" id="e-pi-marital">Please select marital status</span>
+                <span class="err-msg" id="e-pi-marital" role="alert">Please select marital status</span>
               </div>
               <div class="form-group full">
-                <label>Nationality *</label>
+                <label for="pi-nationality">Nationality *</label>
                 <input type="text" id="pi-nationality" placeholder="e.g. Tanzanian" oninput="liveUpdate()"/>
-                <span class="err-msg" id="e-pi-nationality">Nationality is required</span>
+                <span class="err-msg" id="e-pi-nationality" role="alert">Nationality is required</span>
               </div>
             </div>
           </div>
@@ -696,7 +946,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <!-- 2. EDUCATION BACKGROUND -->
         <div class="card fade-up">
           <div class="card-header">
-            <div class="card-icon">🎓</div>
+            <div class="card-icon" aria-hidden="true">🎓</div>
             <div>
               <h3>Education Background</h3>
               <p>Your academic history from primary to university</p>
@@ -704,80 +954,76 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           </div>
           <div class="card-body">
 
-            <!-- Primary -->
             <div class="sub-label">🏫 Primary Education</div>
             <div class="form-grid cols-3">
               <div class="form-group full" style="grid-column:1/3;">
-                <label>School Name</label>
+                <label for="edu-pri-school">School Name</label>
                 <input type="text" id="edu-pri-school" placeholder="e.g. Azimio Primary School" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>From Year</label>
+                <label for="edu-pri-from">From Year</label>
                 <input type="text" id="edu-pri-from" placeholder="2002" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>To Year</label>
+                <label for="edu-pri-to">To Year</label>
                 <input type="text" id="edu-pri-to" placeholder="2008" oninput="liveUpdate()"/>
               </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- O'Level -->
             <div class="sub-label">📘 O'Level Education (Ordinary)</div>
             <div class="form-grid">
               <div class="form-group full">
-                <label>School Name</label>
+                <label for="edu-olv-school">School Name</label>
                 <input type="text" id="edu-olv-school" placeholder="e.g. Tambaza High School" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>From Year</label>
+                <label for="edu-olv-from">From Year</label>
                 <input type="text" id="edu-olv-from" placeholder="2009" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>To Year</label>
+                <label for="edu-olv-to">To Year</label>
                 <input type="text" id="edu-olv-to" placeholder="2013" oninput="liveUpdate()"/>
               </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- A'Level -->
             <div class="sub-label">📗 A'Level Education (Advanced)</div>
             <div class="form-grid">
               <div class="form-group full">
-                <label>School Name</label>
+                <label for="edu-alv-school">School Name</label>
                 <input type="text" id="edu-alv-school" placeholder="e.g. Kibaha High School" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>From Year</label>
+                <label for="edu-alv-from">From Year</label>
                 <input type="text" id="edu-alv-from" placeholder="2014" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>To Year</label>
+                <label for="edu-alv-to">To Year</label>
                 <input type="text" id="edu-alv-to" placeholder="2016" oninput="liveUpdate()"/>
               </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- University -->
             <div class="sub-label">🏛️ University / Higher Education</div>
             <div class="form-grid">
               <div class="form-group full">
-                <label>University / Institution Name</label>
+                <label for="edu-uni-name">University / Institution Name</label>
                 <input type="text" id="edu-uni-name" placeholder="e.g. University of Dar es Salaam (UDSM)" oninput="liveUpdate()"/>
               </div>
               <div class="form-group full">
-                <label>Degree / Qualification</label>
+                <label for="edu-uni-degree">Degree / Qualification</label>
                 <input type="text" id="edu-uni-degree" placeholder="e.g. Bachelor of Science in Computer Science" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>From Year</label>
+                <label for="edu-uni-from">From Year</label>
                 <input type="text" id="edu-uni-from" placeholder="2017" oninput="liveUpdate()"/>
               </div>
               <div class="form-group">
-                <label>To Year</label>
+                <label for="edu-uni-to">To Year</label>
                 <input type="text" id="edu-uni-to" placeholder="2021" oninput="liveUpdate()"/>
               </div>
             </div>
@@ -788,7 +1034,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <!-- 3. HOBBIES -->
         <div class="card fade-up">
           <div class="card-header">
-            <div class="card-icon">🎯</div>
+            <div class="card-icon" aria-hidden="true">🎯</div>
             <div>
               <h3>Hobbies &amp; Interests</h3>
               <p>One hobby per line — shown as bullet points in CV</p>
@@ -796,7 +1042,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           </div>
           <div class="card-body">
             <div class="form-group">
-              <label>Hobbies <span class="opt">(one per line)</span></label>
+              <label for="hobbies">Hobbies <span class="opt">(one per line)</span></label>
               <textarea id="hobbies" rows="4" placeholder="Reading&#10;Football&#10;Photography&#10;Travelling" oninput="liveUpdate()"></textarea>
               <span class="hint">Enter each hobby on a new line. They appear as bullet points in your CV.</span>
             </div>
@@ -806,7 +1052,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <!-- 4. WORK EXPERIENCE -->
         <div class="card fade-up">
           <div class="card-header">
-            <div class="card-icon">💼</div>
+            <div class="card-icon" aria-hidden="true">💼</div>
             <div>
               <h3>Work Experience</h3>
               <p>Add all your relevant work history</p>
@@ -814,8 +1060,8 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           </div>
           <div class="card-body">
             <div class="entries-wrap" id="exp-list"></div>
-            <button class="add-btn" onclick="addExp()">
-              <span style="font-size:1.1rem;">+</span> Add Work Experience
+            <button class="add-btn" onclick="addExp()" aria-label="Add work experience entry">
+              <span aria-hidden="true" style="font-size:1.1rem;">+</span> Add Work Experience
             </button>
           </div>
         </div>
@@ -823,7 +1069,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <!-- 5. REFEREES -->
         <div class="card fade-up">
           <div class="card-header">
-            <div class="card-icon">📋</div>
+            <div class="card-icon" aria-hidden="true">📋</div>
             <div>
               <h3>Referees</h3>
               <p>Add at least 2 professional referees</p>
@@ -831,10 +1077,10 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           </div>
           <div class="card-body">
             <div class="entries-wrap" id="ref-list"></div>
-            <button class="add-btn" onclick="addRef()">
-              <span style="font-size:1.1rem;">+</span> Add Referee
+            <button class="add-btn" onclick="addRef()" aria-label="Add referee entry">
+              <span aria-hidden="true" style="font-size:1.1rem;">+</span> Add Referee
             </button>
-            <span class="err-msg" id="e-refs" style="margin-top:.5rem;">Please add at least 2 referees</span>
+            <span class="err-msg" id="e-refs" role="alert" style="margin-top:.5rem;">Please add at least 2 referees</span>
           </div>
         </div>
 
@@ -843,9 +1089,9 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
           <div class="card-body">
             <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;">
               <button class="btn btn-primary" onclick="doDownloadPDF()">⬇️ Download PDF</button>
-              <button class="btn btn-green" onclick="doPrint()">🖨️ Print CV</button>
-              <button class="btn btn-gold" onclick="doWhatsApp()">📱 Order Pro CV — 3,000 TZS</button>
-              <button class="btn btn-ghost" onclick="doReset()">↺ Reset Form</button>
+              <button class="btn btn-green"   onclick="doPrint()">🖨️ Print CV</button>
+              <button class="btn btn-gold"    onclick="doWhatsApp()">📱 Order Pro CV — 3,000 TZS</button>
+              <button class="btn btn-ghost"   onclick="doReset()">↺ Reset Form</button>
             </div>
             <p class="hint" style="margin-top:.75rem;">Tip: Fill all required fields, then download or print your professional CV.</p>
           </div>
@@ -858,7 +1104,7 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <div class="preview-wrap">
           <div class="preview-bar">
             <div class="preview-bar-left">
-              <div class="dots">
+              <div class="dots" aria-hidden="true">
                 <div class="dot dot-r"></div>
                 <div class="dot dot-y"></div>
                 <div class="dot dot-g"></div>
@@ -867,13 +1113,13 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
             </div>
             <div class="preview-btns">
               <button class="btn btn-sm btn-primary" onclick="doDownloadPDF()">⬇️ PDF</button>
-              <button class="btn btn-sm btn-ghost" onclick="doPrint()">🖨️ Print</button>
+              <button class="btn btn-sm btn-ghost"   onclick="doPrint()">🖨️ Print</button>
             </div>
           </div>
-          <div class="preview-scroll">
+          <div class="preview-scroll" role="region" aria-label="CV live preview">
             <div id="cv-doc">
               <div class="empty-state" id="empty-state">
-                <div class="empty-icon">📄</div>
+                <div class="empty-icon" aria-hidden="true">📄</div>
                 <div class="empty-text">Start filling in the form<br>and your CV will appear here in real-time</div>
               </div>
             </div>
@@ -885,26 +1131,206 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
   </div>
 </section>
 
-<!-- ==================== PRICING ==================== -->
-<section id="pricing">
+<!-- ================================================================
+     CAREER TIPS
+================================================================ -->
+<section id="tips" aria-labelledby="tips-heading">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Career Tips</div>
+      <h2 class="section-title" id="tips-heading">Expert <span>CV Writing Tips</span></h2>
+      <p class="section-sub">Proven advice to help you write a CV that stands out and lands interviews in 2026.</p>
+    </div>
+
+    <!-- Rotating tip card -->
+    <div class="tip-card fade-up" role="region" aria-label="Career tip rotator">
+      <span class="tip-emoji" id="tip-emoji" aria-hidden="true">💡</span>
+      <div class="tip-body" id="tip-body" role="status" aria-live="polite">Loading your first tip…</div>
+      <div class="tip-counter" id="tip-counter" aria-label="Tip position">Tip 1 of 10</div>
+      <div class="tip-dots-row" id="tip-dots" role="tablist" aria-label="Select tip"></div>
+      <div class="tip-actions">
+        <button class="btn btn-ghost" onclick="prevTip()" aria-label="Previous tip">← Previous</button>
+        <button class="btn btn-primary" onclick="nextTip()" aria-label="Next tip">Next Tip →</button>
+        <button class="btn btn-outline" style="background:transparent;color:var(--indigo);border-color:rgba(79,70,229,.22);" onclick="randomTip()" aria-label="Random tip">🔀 Random</button>
+      </div>
+    </div>
+
+    <!-- Static quick-tips grid -->
+    <div class="tip-grid fade-up" style="margin-top:3rem;">
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">🎯</span>
+        <div>
+          <h4>Tailor Every Application</h4>
+          <p>Customize your CV for each role you apply to. Match keywords from the job description to pass ATS filters and immediately grab the recruiter's attention.</p>
+        </div>
+      </div>
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">📊</span>
+        <div>
+          <h4>Quantify Your Achievements</h4>
+          <p>Use numbers wherever possible — "Increased team efficiency by 40%" beats "improved team performance" every time. Metrics build instant credibility.</p>
+        </div>
+      </div>
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">✍️</span>
+        <div>
+          <h4>Keep It Concise — 1 or 2 Pages</h4>
+          <p>Recruiters scan CVs in under 10 seconds. One to two pages is the gold standard. Cut anything that doesn't directly support the role you want.</p>
+        </div>
+      </div>
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">🔍</span>
+        <div>
+          <h4>Proofread Thoroughly</h4>
+          <p>A single spelling mistake can cost you an interview. Read your CV backwards to catch errors, then ask a trusted friend or colleague to review it too.</p>
+        </div>
+      </div>
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">📧</span>
+        <div>
+          <h4>Use a Professional Email</h4>
+          <p>Your contact email should be firstname.lastname@gmail.com or similar. Outdated or quirky handles from your school days signal unprofessionalism.</p>
+        </div>
+      </div>
+
+      <div class="tip-mini">
+        <span class="tip-mini-icon" aria-hidden="true">💼</span>
+        <div>
+          <h4>Lead With Strong Action Verbs</h4>
+          <p>Start every bullet point with a dynamic verb: "Led", "Designed", "Launched", "Achieved", "Reduced". This makes your contributions sound confident and decisive.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FAQ
+================================================================ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title" id="faq-heading">Frequently Asked <span>Questions</span></h2>
+      <p class="section-sub">Everything you need to know about our free online CV generator and resume builder.</p>
+    </div>
+
+    <div class="faq-list fade-up" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a1">
+          <span>What is a CV generator?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a1" role="region">
+          A CV generator — also called a resume builder or CV maker — is an online tool that lets you create a professional curriculum vitae quickly and easily. Instead of formatting a document from scratch in Word or Google Docs, you simply fill in your personal details, education, work experience, and skills. The generator automatically formats everything into a polished, professional layout. Our free CV generator lets you preview your CV in real-time and download it as a perfectly formatted PDF with a single click.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a2">
+          <span>Is this CV generator really free?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a2" role="region">
+          Yes — 100% free. There are no hidden charges, no subscription tiers for the core tool, no watermarks on your PDF, and absolutely no credit card required. You can create, preview, and download your CV without paying a single cent. We also offer an optional premium professional design service starting at 3,000 TZS for those who want a custom, recruiter-approved CV crafted by a professional designer and delivered to your WhatsApp.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a3">
+          <span>How can I download my CV as a PDF?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a3" role="region">
+          Downloading your CV is very simple. After filling in your details in the form, your CV appears live in the preview panel. Once you are satisfied with how it looks, click the "⬇️ Download PDF" button — either in the main action buttons below the form or in the preview panel toolbar. Your CV is then generated as a high-quality PDF and automatically saved to your device's downloads folder. You can also click "🖨️ Print CV" to print it directly or use your browser's Save as PDF option.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a4">
+          <span>Do I need to create an account or register?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a4" role="region">
+          No registration, account, or email address is required — not even to download your PDF. You can start building your CV immediately, right from this page. We do not ask for login credentials or personal information. Your data stays entirely within your browser and is never transmitted to or stored on our servers. Simply fill in the form and download your PDF.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a5">
+          <span>Can I edit my CV after I've created it?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a5" role="region">
+          Yes — you can freely edit every section of your CV while the page is open. The live preview updates in real-time with every change you make. However, because this tool works entirely in your browser without saving data to a server, your entries are not preserved between browser sessions. We strongly recommend downloading your PDF before closing the browser tab. If you need to make future edits, simply return to the page, re-enter your details (the form is designed to be very quick), and download an updated version.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a6">
+          <span>What sections can I include in my CV?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a6" role="region">
+          Our CV generator includes all the sections that matter most to recruiters: Personal Information (full name, phone, email, date of birth, nationality), complete Education Background (Primary, O'Level, A'Level, and University/Higher Education), Hobbies &amp; Interests, unlimited Work Experience entries with full responsibilities, and References / Referees. All sections update live in the preview as you type, giving you complete control over your final CV layout and content.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a7">
+          <span>Is my personal information secure and private?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a7" role="region">
+          Absolutely. Every piece of information you enter stays entirely within your own browser — it is never sent to, processed by, or stored on any server. We do not collect, track, or retain any personal data you input into the CV form. Once you close the browser tab, all entered data is cleared automatically. Your privacy is completely protected.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a8">
+          <span>What makes this the best free CV generator in 2026?</span>
+          <span class="faq-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-answer" id="faq-a8" role="region">
+          Our CV builder stands out because of its combination of simplicity, speed, and quality. Key advantages include: a live real-time preview so you see your final CV as you type; a clean professional layout that is trusted by recruiters; no sign-up required; full mobile and desktop compatibility; one-click PDF export; unlimited work experience entries; and a premium professional design service for those who want a standout custom CV. We focus on making a great CV accessible to everyone — students, fresh graduates, and experienced professionals alike.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PRICING
+================================================================ -->
+<section id="pricing" aria-labelledby="pricing-heading">
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag">Pricing</div>
-      <h2 class="section-title">Simple, Transparent <span>Pricing</span></h2>
+      <h2 class="section-title" id="pricing-heading">Simple, Transparent <span>Pricing</span></h2>
       <p class="section-sub">Start free. Upgrade when you need a recruiter-stopping premium design.</p>
     </div>
+
     <div class="pricing-grid fade-up">
 
       <div class="price-card">
         <div class="price-plan">Free Plan</div>
         <div class="price-amount">0 <span>TZS</span></div>
-        <div class="price-desc">Everything to get started today</div>
+        <div class="price-desc">Everything you need to create a great CV today</div>
         <ul class="price-features">
-          <li>Full CV Generator</li>
-          <li>Live Real-time Preview</li>
-          <li>Basic PDF Download</li>
-          <li>Print Ready Format</li>
+          <li>Full CV Generator Tool</li>
+          <li>Live Real-Time Preview</li>
+          <li>PDF Download</li>
+          <li>Print-Ready Format</li>
           <li>All CV Sections Included</li>
+          <li>No Registration Required</li>
         </ul>
         <a href="#cv-section" class="btn btn-ghost" style="width:100%;justify-content:center;">Start Building Free →</a>
       </div>
@@ -913,29 +1339,34 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
         <div class="price-badge">POPULAR</div>
         <div class="price-plan">Premium Plan</div>
         <div class="price-amount">3,000 <span>TZS</span></div>
-        <div class="price-desc">A stunning CV that gets noticed by employers</div>
+        <div class="price-desc">A stunning, custom CV that gets you noticed by employers</div>
         <ul class="price-features">
           <li>Everything in Free</li>
           <li>Professional Premium Design</li>
           <li>Custom Formatting &amp; Layout</li>
           <li>Multiple Color Themes</li>
-          <li>Fast Delivery within 24hrs</li>
+          <li>Fast Delivery within 24 hrs</li>
           <li>WhatsApp Support</li>
           <li>Unlimited Revisions</li>
         </ul>
-        <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV." target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">Order via WhatsApp →</a>
+        <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV."
+           target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Order via WhatsApp →</a>
       </div>
 
     </div>
 
-    <div class="text-center fade-up" style="text-align:center;margin-top:3rem;">
-      <div class="card" style="max-width:620px;margin:0 auto;">
+    <div class="fade-up" style="text-align:center;margin-top:3rem;">
+      <div class="card" style="max-width:640px;margin:0 auto;">
         <div class="card-body" style="text-align:center;padding:2.5rem;">
-          <div style="font-size:2.5rem;margin-bottom:.9rem;">🎨</div>
+          <div style="font-size:2.5rem;margin-bottom:.9rem;" aria-hidden="true">🎨</div>
           <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin-bottom:.5rem;">Need a Premium Designed CV?</h3>
-          <p style="color:var(--slate);margin-bottom:1.5rem;">Get a stunning, recruiter-approved CV designed by a professional — delivered fast to your WhatsApp.</p>
-          <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV." target="_blank" class="btn btn-gold">
-            <svg style="width:19px;height:19px;fill:currentColor;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.906 6.906 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.123 1.519 5.862L0 24l6.335-1.499A11.957 11.957 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.36-.214-3.732.883.897-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+          <p style="color:var(--slate);margin-bottom:1.5rem;">Get a stunning, recruiter-approved CV designed by a professional — delivered fast directly to your WhatsApp.</p>
+          <a href="https://wa.me/255658502920?text=Hello%20Hafidh%2C%20I%20would%20like%20a%20professionally%20designed%20CV."
+             target="_blank" rel="noopener" class="btn btn-gold">
+            <svg style="width:19px;height:19px;fill:currentColor;" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.906 6.906 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.123 1.519 5.862L0 24l6.335-1.499A11.957 11.957 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.36-.214-3.732.883.897-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/>
+            </svg>
             Order Professional CV — 3,000 TZS
           </a>
         </div>
@@ -944,102 +1375,242 @@ footer{background:var(--navy);padding:3.5rem 2rem 1.75rem;}
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
-<footer>
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+<footer role="contentinfo">
   <div class="footer-in">
+
+    <!-- Top row: brand + contact -->
     <div class="footer-grid">
       <div>
         <div class="footer-brand">ProCV Generator</div>
-        <p class="footer-desc">Build polished, professional CVs for free. Perfect for students, fresh graduates and professionals in Tanzania and East Africa.</p>
-      </div>
-      <div>
-        <div class="footer-col-title">Quick Links</div>
-        <div class="footer-links-col">
-          <a href="#home" class="footer-link">Home</a>
-          <a href="#cv-section" class="footer-link">CV Generator</a>
-          <a href="#pricing" class="footer-link">Pricing</a>
-          <a href="https://wa.me/255658502920" class="footer-link" target="_blank">Order Premium CV</a>
-        </div>
+        <p class="footer-desc">Build polished, professional CVs for free. The best free online resume builder for students, fresh graduates, and professionals across Tanzania and East Africa.</p>
       </div>
       <div>
         <div class="footer-col-title">Developer Contact</div>
         <div class="footer-contact-row">
-          <span class="footer-contact-icon">👤</span>
+          <span class="footer-contact-icon" aria-hidden="true">👤</span>
           <span class="footer-contact-val"><strong style="color:#fff;">Hafidh Omar Othman</strong></span>
         </div>
         <div class="footer-contact-row">
-          <span class="footer-contact-icon">📞</span>
+          <span class="footer-contact-icon" aria-hidden="true">📞</span>
           <a href="tel:+255658502920" class="footer-contact-val" style="color:var(--slate3);text-decoration:none;">+255 658 502 920</a>
         </div>
         <div class="footer-contact-row">
-          <span class="footer-contact-icon">✉️</span>
+          <span class="footer-contact-icon" aria-hidden="true">✉️</span>
           <a href="mailto:hafidhomar167@gmail.com" class="footer-contact-val" style="color:var(--slate3);text-decoration:none;">hafidhomar167@gmail.com</a>
         </div>
         <div class="footer-contact-row">
-          <span class="footer-contact-icon">📍</span>
+          <span class="footer-contact-icon" aria-hidden="true">📍</span>
           <span class="footer-contact-val">Dar es Salaam, Tanzania</span>
         </div>
       </div>
     </div>
-    <div class="footer-divider"></div>
+
+    <!-- Horizontal quick-links nav strip -->
+    <nav class="footer-nav-strip" aria-label="Footer navigation">
+      <a href="#home"       class="footer-link">🏠 Home</a>
+      <a href="#why-us"     class="footer-link">⭐ Why Use ProCV</a>
+      <a href="#cv-section" class="footer-link">📄 CV Generator</a>
+      <a href="#tips"       class="footer-link">💡 Career Tips</a>
+      <a href="#faq"        class="footer-link">❓ FAQ</a>
+      <a href="#pricing"    class="footer-link">💎 Pricing</a>
+      <a href="https://wa.me/255658502920" class="footer-link" target="_blank" rel="noopener">📱 Order Premium CV</a>
+    </nav>
+
     <div class="footer-bottom">
       <div class="footer-copy">
-        © 2025 ProCV · Developed with ❤️ by <a href="mailto:hafidhomar167@gmail.com">Hafidh Omar Othman</a> · All rights reserved.
+        © 2026 ProCV · Developed with ❤️ by <a href="mailto:hafidhomar167@gmail.com">Hafidh Omar Othman</a> · All rights reserved.
       </div>
-      <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+      <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top of page">↑</button>
     </div>
+
   </div>
 </footer>
 
-<!-- ==================== JAVASCRIPT ==================== -->
+<!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
 <script>
 "use strict";
 
-/* ==========================================
+/* ============================================================
    STATE
-========================================== */
+============================================================ */
 let expCount = 0;
 let refCount  = 0;
-const state = { exp: [], refs: [] };
+const state  = { exp: [], refs: [] };
 
-/* ==========================================
-   SCROLL & NAV
-========================================== */
+/* ============================================================
+   SCROLL PROGRESS & NAV
+============================================================ */
 window.addEventListener('scroll', () => {
   const prog = document.getElementById('prog');
   const pct  = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-  prog.style.transform = `scaleX(${pct})`;
-});
+  if (prog) prog.style.transform = `scaleX(${Math.min(pct, 1)})`;
+}, { passive: true });
 
-function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
-function closeNav()  { document.getElementById('nav-links').classList.remove('open'); }
+function toggleNav() {
+  const links  = document.getElementById('nav-links');
+  const toggle = document.querySelector('.mob-toggle');
+  const open   = links.classList.toggle('open');
+  if (toggle) toggle.setAttribute('aria-expanded', open);
+}
+function closeNav() {
+  document.getElementById('nav-links').classList.remove('open');
+  const toggle = document.querySelector('.mob-toggle');
+  if (toggle) toggle.setAttribute('aria-expanded', 'false');
+}
 
-/* ==========================================
-   INTERSECTION OBSERVER (fade-up)
-========================================== */
-const observer = new IntersectionObserver(
+/* ============================================================
+   INTERSECTION OBSERVER — fade-up animations
+============================================================ */
+const io = new IntersectionObserver(
   entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-  { threshold: 0.08 }
+  { threshold: 0.07 }
 );
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-/* ==========================================
+/* ============================================================
    HELPERS
-========================================== */
+============================================================ */
 function val(id) {
   const el = document.getElementById(id);
   return el ? el.value.trim() : '';
 }
-function fmt(v) { return v || ''; }
 function escHtml(str) {
   const d = document.createElement('div');
   d.textContent = str;
   return d.innerHTML;
 }
 
-/* ==========================================
+/* ============================================================
+   LIVE CLOCK
+============================================================ */
+function updateClock() {
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const el  = document.getElementById('live-time');
+  if (el) el.textContent = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+/* ============================================================
+   SIMULATED DAILY USER COUNTER
+============================================================ */
+(function initCounter() {
+  const el = document.getElementById('live-users');
+  if (!el) return;
+  const today = new Date();
+  // Day-based seed keeps the number stable throughout the day
+  const seed  = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+  let count   = 74 + (seed % 167); // 74–240 range
+  el.textContent = count;
+  // Occasionally bump the counter to simulate real traffic
+  setInterval(() => {
+    if (Math.random() < 0.3) {
+      count += Math.floor(Math.random() * 3) + 1;
+      el.textContent = count;
+    }
+  }, 5000);
+})();
+
+/* ============================================================
+   CAREER TIPS ROTATOR
+============================================================ */
+const TIPS = [
+  { emoji: '🎯', text: 'Tailor your CV for every single job application. Mirror keywords from the job posting to pass ATS (Applicant Tracking System) filters and immediately impress the recruiter who reads it.' },
+  { emoji: '📊', text: 'Quantify every achievement you can. "Managed a team of 10 and delivered the project 3 weeks ahead of schedule" is infinitely more powerful than vague phrases like "improved team performance".' },
+  { emoji: '✍️', text: 'Keep your CV to one or two pages maximum. Recruiters spend an average of 6–7 seconds scanning a CV during initial review — make every single word earn its place on the page.' },
+  { emoji: '🔍', text: 'Proofread relentlessly. A single spelling mistake or grammar error can immediately disqualify you from a competitive role. Read it backwards, then ask a trusted colleague or friend to review it as well.' },
+  { emoji: '📧', text: 'Use a professional email address — ideally firstname.lastname@gmail.com. Old-fashioned or quirky email handles from your school days signal carelessness and can undermine an otherwise strong CV.' },
+  { emoji: '⭐', text: 'Put your strongest, most relevant experience at the very top. Recruiters read in an F-pattern, meaning the beginning and left side of your CV carry the most visual weight during the first scan.' },
+  { emoji: '💼', text: 'Lead every bullet point with a strong, specific action verb: "Developed", "Led", "Launched", "Achieved", "Reduced", "Designed". These words make your contributions sound confident, clear, and decisive.' },
+  { emoji: '🖋️', text: 'Write a compelling professional summary — a punchy 2–3 sentence pitch at the top of your CV that captures who you are, what you specialize in, and the unique value you bring to an employer.' },
+  { emoji: '📱', text: 'Add your LinkedIn profile URL if you have one. Many modern recruiters check LinkedIn before inviting candidates to interview — an up-to-date, complete profile dramatically increases your chances.' },
+  { emoji: '🌐', text: 'For technical, creative, or digital roles, always include a portfolio link, GitHub profile, or direct examples of your work. Seeing real-world proof of your skills is far more persuasive than reading about them.' },
+];
+
+let currentTip = 0;
+let tipTimer   = null;
+
+function buildDots() {
+  const dotsEl = document.getElementById('tip-dots');
+  if (!dotsEl) return;
+  dotsEl.innerHTML = TIPS.map((_, i) =>
+    `<span class="tip-dot${i === currentTip ? ' active' : ''}"
+           role="tab" aria-selected="${i === currentTip}"
+           aria-label="Tip ${i + 1}"
+           onclick="goToTip(${i})" tabindex="0"
+           onkeydown="if(event.key==='Enter'||event.key===' ')goToTip(${i})"></span>`
+  ).join('');
+}
+
+function showTip(idx, animate) {
+  const bodyEl    = document.getElementById('tip-body');
+  const emojiEl   = document.getElementById('tip-emoji');
+  const counterEl = document.getElementById('tip-counter');
+  if (!bodyEl) return;
+
+  const apply = () => {
+    bodyEl.textContent    = TIPS[idx].text;
+    emojiEl.textContent   = TIPS[idx].emoji;
+    counterEl.textContent = `Tip ${idx + 1} of ${TIPS.length}`;
+    bodyEl.classList.remove('fade-out');
+    buildDots();
+  };
+
+  if (animate) {
+    bodyEl.classList.add('fade-out');
+    setTimeout(apply, 360);
+  } else {
+    apply();
+  }
+}
+
+function nextTip()         { currentTip = (currentTip + 1) % TIPS.length; showTip(currentTip, true); resetTipTimer(); }
+function prevTip()         { currentTip = (currentTip - 1 + TIPS.length) % TIPS.length; showTip(currentTip, true); resetTipTimer(); }
+function randomTip()       { let n; do { n = Math.floor(Math.random() * TIPS.length); } while (n === currentTip && TIPS.length > 1); currentTip = n; showTip(currentTip, true); resetTipTimer(); }
+function goToTip(i)        { currentTip = i; showTip(currentTip, true); resetTipTimer(); }
+function resetTipTimer()   { clearInterval(tipTimer); tipTimer = setInterval(nextTip, 7500); }
+
+// Pause auto-advance on hover
+const tipCard = document.querySelector('.tip-card');
+if (tipCard) {
+  tipCard.addEventListener('mouseenter', () => clearInterval(tipTimer));
+  tipCard.addEventListener('mouseleave', resetTipTimer);
+}
+
+// Init
+showTip(0, false);
+resetTipTimer();
+
+/* ============================================================
+   FAQ ACCORDION
+============================================================ */
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = answer.classList.contains('open');
+
+  // Close all open items first
+  document.querySelectorAll('.faq-answer.open').forEach(a => {
+    a.classList.remove('open');
+    const b = a.previousElementSibling;
+    if (b) b.setAttribute('aria-expanded', 'false');
+  });
+
+  // Open clicked item (unless it was already open)
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+/* ============================================================
    ADD / REMOVE EXPERIENCE
-========================================== */
+============================================================ */
 function addExp() {
   const id = expCount++;
   state.exp.push(id);
@@ -1049,28 +1620,30 @@ function addExp() {
   wrap.innerHTML = `
     <div class="entry-card-top">
       <span class="entry-card-label">Experience #${state.exp.length}</span>
-      <button class="btn btn-sm btn-danger" onclick="removeExp(${id})">✕ Remove</button>
+      <button class="btn btn-sm btn-danger" onclick="removeExp(${id})" aria-label="Remove experience ${state.exp.length}">✕ Remove</button>
     </div>
     <div class="form-grid">
       <div class="form-group">
-        <label>Company Name *</label>
+        <label for="exp-company-${id}">Company Name *</label>
         <input type="text" id="exp-company-${id}" placeholder="e.g. Vodacom Tanzania" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>Position / Job Title *</label>
+        <label for="exp-pos-${id}">Position / Job Title *</label>
         <input type="text" id="exp-pos-${id}" placeholder="e.g. Software Developer" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>From (Month/Year)</label>
+        <label for="exp-from-${id}">From (Month/Year)</label>
         <input type="text" id="exp-from-${id}" placeholder="Jan 2020" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>To (Month/Year)</label>
+        <label for="exp-to-${id}">To (Month/Year)</label>
         <input type="text" id="exp-to-${id}" placeholder="Dec 2022 / Present" oninput="liveUpdate()"/>
       </div>
       <div class="form-group full">
-        <label>Responsibilities & Achievements *</label>
-        <textarea id="exp-resp-${id}" rows="3" placeholder="• Developed and maintained web applications using React and Node.js&#10;• Collaborated with cross-functional teams to deliver projects on time&#10;• Reduced system downtime by 30% through proactive monitoring" oninput="liveUpdate()"></textarea>
+        <label for="exp-resp-${id}">Responsibilities &amp; Achievements *</label>
+        <textarea id="exp-resp-${id}" rows="3"
+          placeholder="• Developed and maintained web applications using React and Node.js&#10;• Collaborated with cross-functional teams to deliver projects on time&#10;• Reduced system downtime by 30% through proactive monitoring"
+          oninput="liveUpdate()"></textarea>
       </div>
     </div>`;
   document.getElementById('exp-list').appendChild(wrap);
@@ -1084,9 +1657,9 @@ function removeExp(id) {
   liveUpdate();
 }
 
-/* ==========================================
+/* ============================================================
    ADD / REMOVE REFEREE
-========================================== */
+============================================================ */
 function addRef() {
   const id = refCount++;
   state.refs.push(id);
@@ -1096,27 +1669,27 @@ function addRef() {
   wrap.innerHTML = `
     <div class="entry-card-top">
       <span class="entry-card-label">Referee #${state.refs.length}</span>
-      <button class="btn btn-sm btn-danger" onclick="removeRef(${id})">✕ Remove</button>
+      <button class="btn btn-sm btn-danger" onclick="removeRef(${id})" aria-label="Remove referee ${state.refs.length}">✕ Remove</button>
     </div>
     <div class="form-grid">
       <div class="form-group">
-        <label>Full Name *</label>
+        <label for="ref-name-${id}">Full Name *</label>
         <input type="text" id="ref-name-${id}" placeholder="e.g. Dr. John Msigwa" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>Position / Title *</label>
+        <label for="ref-pos-${id}">Position / Title *</label>
         <input type="text" id="ref-pos-${id}" placeholder="e.g. Senior Lecturer" oninput="liveUpdate()"/>
       </div>
       <div class="form-group full">
-        <label>Organization / Institution *</label>
+        <label for="ref-org-${id}">Organization / Institution *</label>
         <input type="text" id="ref-org-${id}" placeholder="e.g. University of Dar es Salaam" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>Phone Number *</label>
+        <label for="ref-phone-${id}">Phone Number *</label>
         <input type="tel" id="ref-phone-${id}" placeholder="+255 000 000 000" oninput="liveUpdate()"/>
       </div>
       <div class="form-group">
-        <label>Email Address *</label>
+        <label for="ref-email-${id}">Email Address *</label>
         <input type="email" id="ref-email-${id}" placeholder="referee@email.com" oninput="liveUpdate()"/>
       </div>
     </div>`;
@@ -1131,9 +1704,9 @@ function removeRef(id) {
   liveUpdate();
 }
 
-/* ==========================================
-   LIVE UPDATE — BUILD CV HTML
-========================================== */
+/* ============================================================
+   LIVE CV BUILDER
+============================================================ */
 function liveUpdate() {
   const name        = val('pi-name');
   const phone       = val('pi-phone');
@@ -1143,43 +1716,32 @@ function liveUpdate() {
   const marital     = val('pi-marital');
   const nationality = val('pi-nationality');
 
-  // Show empty state if nothing filled
   if (!name && !phone && !email) {
     document.getElementById('cv-doc').innerHTML = `
-      <div class="empty-state" id="empty-state">
+      <div class="empty-state">
         <div class="empty-icon">📄</div>
         <div class="empty-text">Start filling in the form<br>and your CV will appear here in real-time</div>
       </div>`;
     return;
   }
 
-  // Format date nicely
+  // Format DOB
   let dobDisplay = '';
   if (dob) {
     try {
-      const d = new Date(dob);
-      dobDisplay = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      dobDisplay = new Date(dob).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     } catch { dobDisplay = dob; }
   }
 
   // Education
-  const priSchool = val('edu-pri-school');
-  const priFrom   = val('edu-pri-from');
-  const priTo     = val('edu-pri-to');
-  const olvSchool = val('edu-olv-school');
-  const olvFrom   = val('edu-olv-from');
-  const olvTo     = val('edu-olv-to');
-  const alvSchool = val('edu-alv-school');
-  const alvFrom   = val('edu-alv-from');
-  const alvTo     = val('edu-alv-to');
-  const uniName   = val('edu-uni-name');
-  const uniDegree = val('edu-uni-degree');
-  const uniFrom   = val('edu-uni-from');
-  const uniTo     = val('edu-uni-to');
+  const priSchool = val('edu-pri-school'), priFrom = val('edu-pri-from'), priTo = val('edu-pri-to');
+  const olvSchool = val('edu-olv-school'), olvFrom = val('edu-olv-from'), olvTo = val('edu-olv-to');
+  const alvSchool = val('edu-alv-school'), alvFrom = val('edu-alv-from'), alvTo = val('edu-alv-to');
+  const uniName   = val('edu-uni-name'),   uniDegree = val('edu-uni-degree');
+  const uniFrom   = val('edu-uni-from'),   uniTo = val('edu-uni-to');
 
   // Hobbies
-  const hobbiesRaw = val('hobbies');
-  const hobbies = hobbiesRaw ? hobbiesRaw.split('\n').map(h => h.trim()).filter(Boolean) : [];
+  const hobbies = val('hobbies').split('\n').map(h => h.trim()).filter(Boolean);
 
   // Experience
   const expEntries = state.exp.map(id => ({
@@ -1199,83 +1761,57 @@ function liveUpdate() {
     email: val(`ref-email-${id}`),
   })).filter(r => r.name);
 
-  /* ---- Build HTML ---- */
+  /* ---- Build CV HTML ---- */
   let html = `
   <div class="cv-top">
     <div class="cv-name">${escHtml(name || 'Your Full Name')}</div>
     <div class="cv-contacts-row">
-      ${phone   ? `<div class="cv-ci">📞 ${escHtml(phone)}</div>` : ''}
-      ${email   ? `<div class="cv-ci">✉️ ${escHtml(email)}</div>` : ''}
+      ${phone       ? `<div class="cv-ci">📞 ${escHtml(phone)}</div>`       : ''}
+      ${email       ? `<div class="cv-ci">✉️ ${escHtml(email)}</div>`       : ''}
       ${nationality ? `<div class="cv-ci">🌍 ${escHtml(nationality)}</div>` : ''}
     </div>
   </div>
-  <div class="cv-inner">
-    <div class="cv-cols">`;
+  <div class="cv-inner"><div class="cv-cols">`;
 
-  /* LEFT COLUMN */
+  /* ---- LEFT COLUMN ---- */
   html += `<div class="cv-left">`;
 
-  /* Personal Details */
-  const hasPersonal = dobDisplay || gender || marital || nationality;
-  if (hasPersonal) {
-    html += `<div style="margin-bottom:1.25rem;">
-      <div class="cv-sh">Personal Details</div>
-      <table class="cv-detail-table">`;
-    if (dobDisplay)   html += `<tr><td>Date of Birth</td><td>${escHtml(dobDisplay)}</td></tr>`;
-    if (gender)       html += `<tr><td>Gender</td><td>${escHtml(gender)}</td></tr>`;
-    if (marital)      html += `<tr><td>Marital Status</td><td>${escHtml(marital)}</td></tr>`;
-    if (nationality)  html += `<tr><td>Nationality</td><td>${escHtml(nationality)}</td></tr>`;
+  // Personal Details
+  if (dobDisplay || gender || marital || nationality) {
+    html += `<div style="margin-bottom:1.25rem;"><div class="cv-sh">Personal Details</div><table class="cv-detail-table">`;
+    if (dobDisplay)  html += `<tr><td>Date of Birth</td><td>${escHtml(dobDisplay)}</td></tr>`;
+    if (gender)      html += `<tr><td>Gender</td><td>${escHtml(gender)}</td></tr>`;
+    if (marital)     html += `<tr><td>Marital Status</td><td>${escHtml(marital)}</td></tr>`;
+    if (nationality) html += `<tr><td>Nationality</td><td>${escHtml(nationality)}</td></tr>`;
     html += `</table></div>`;
   }
 
-  /* Education */
-  const hasEdu = priSchool || olvSchool || alvSchool || uniName;
-  if (hasEdu) {
+  // Education
+  if (priSchool || olvSchool || alvSchool || uniName) {
     html += `<div style="margin-bottom:1.25rem;"><div class="cv-sh">Education Background</div>`;
-    if (priSchool) {
-      html += `<div class="cv-edu-block">
-        <div class="cv-edu-level">🏫 Primary Education</div>
-        <div class="cv-edu-name">${escHtml(priSchool)}</div>
-        ${(priFrom || priTo) ? `<div class="cv-edu-years">${escHtml(priFrom)}${priFrom && priTo ? ' – ' : ''}${escHtml(priTo)}</div>` : ''}
+    const eduBlock = (level, name, from, to, qual) => `
+      <div class="cv-edu-block">
+        <div class="cv-edu-level">${level}</div>
+        <div class="cv-edu-name">${escHtml(name)}</div>
+        ${qual ? `<div class="cv-edu-qual">${escHtml(qual)}</div>` : ''}
+        ${(from || to) ? `<div class="cv-edu-years">${escHtml(from)}${from && to ? ' – ' : ''}${escHtml(to)}</div>` : ''}
       </div>`;
-    }
-    if (olvSchool) {
-      html += `<div class="cv-edu-block">
-        <div class="cv-edu-level">📘 O'Level (Ordinary)</div>
-        <div class="cv-edu-name">${escHtml(olvSchool)}</div>
-        ${(olvFrom || olvTo) ? `<div class="cv-edu-years">${escHtml(olvFrom)}${olvFrom && olvTo ? ' – ' : ''}${escHtml(olvTo)}</div>` : ''}
-      </div>`;
-    }
-    if (alvSchool) {
-      html += `<div class="cv-edu-block">
-        <div class="cv-edu-level">📗 A'Level (Advanced)</div>
-        <div class="cv-edu-name">${escHtml(alvSchool)}</div>
-        ${(alvFrom || alvTo) ? `<div class="cv-edu-years">${escHtml(alvFrom)}${alvFrom && alvTo ? ' – ' : ''}${escHtml(alvTo)}</div>` : ''}
-      </div>`;
-    }
-    if (uniName) {
-      html += `<div class="cv-edu-block">
-        <div class="cv-edu-level">🏛️ University / Higher Education</div>
-        <div class="cv-edu-name">${escHtml(uniName)}</div>
-        ${uniDegree ? `<div class="cv-edu-qual">${escHtml(uniDegree)}</div>` : ''}
-        ${(uniFrom || uniTo) ? `<div class="cv-edu-years">${escHtml(uniFrom)}${uniFrom && uniTo ? ' – ' : ''}${escHtml(uniTo)}</div>` : ''}
-      </div>`;
-    }
+    if (priSchool) html += eduBlock('🏫 Primary Education',              priSchool, priFrom, priTo);
+    if (olvSchool) html += eduBlock("📘 O'Level (Ordinary)",             olvSchool, olvFrom, olvTo);
+    if (alvSchool) html += eduBlock("📗 A'Level (Advanced)",             alvSchool, alvFrom, alvTo);
+    if (uniName)   html += eduBlock('🏛️ University / Higher Education', uniName,   uniFrom, uniTo, uniDegree);
     html += `</div>`;
   }
 
-  /* Hobbies */
+  // Hobbies
   if (hobbies.length) {
     html += `<div><div class="cv-sh">Hobbies &amp; Interests</div>
-      <ul class="cv-hobbies-list">
-        ${hobbies.map(h => `<li>${escHtml(h)}</li>`).join('')}
-      </ul>
+      <ul class="cv-hobbies-list">${hobbies.map(h => `<li>${escHtml(h)}</li>`).join('')}</ul>
     </div>`;
   }
+  html += `</div>`; // end cv-left
 
-  html += `</div>`; /* end cv-left */
-
-  /* RIGHT COLUMN — Work Experience */
+  /* ---- RIGHT COLUMN — Work Experience ---- */
   html += `<div class="cv-right">`;
   if (expEntries.length) {
     html += `<div style="margin-bottom:1.25rem;"><div class="cv-sh">Work Experience</div>`;
@@ -1286,7 +1822,7 @@ function liveUpdate() {
           ${(e.from || e.to) ? `<div class="cv-exp-dur">${escHtml(e.from)}${e.from && e.to ? ' – ' : ''}${escHtml(e.to)}</div>` : ''}
         </div>
         ${e.company ? `<div class="cv-exp-company">${escHtml(e.company)}</div>` : ''}
-        ${e.resp ? `<div class="cv-exp-resp">${escHtml(e.resp).replace(/\n/g, '<br>')}</div>` : ''}
+        ${e.resp    ? `<div class="cv-exp-resp">${escHtml(e.resp).replace(/\n/g,'<br>')}</div>` : ''}
       </div>`;
     });
     html += `</div>`;
@@ -1296,11 +1832,10 @@ function liveUpdate() {
       <div style="font-size:.78rem;color:var(--slate);font-style:italic;">No work experience added yet.</div>
     </div>`;
   }
-  html += `</div>`; /* end cv-right */
+  html += `</div>`; // end cv-right
+  html += `</div>`; // end cv-cols
 
-  html += `</div>`; /* end cv-cols */
-
-  /* REFEREES — full width */
+  /* ---- REFEREES — full width ---- */
   if (refEntries.length) {
     html += `<div style="border-top:1px solid var(--light);padding-top:1.25rem;margin-top:.5rem;">
       <div class="cv-sh">References / Referees</div>
@@ -1309,29 +1844,26 @@ function liveUpdate() {
       html += `<div class="cv-ref-block">
         <div class="cv-ref-name">${escHtml(r.name)}</div>
         <div class="cv-ref-info">
-          ${r.pos  ? `<span>${escHtml(r.pos)}</span><br>` : ''}
-          ${r.org  ? `<span>${escHtml(r.org)}</span><br>` : ''}
+          ${r.pos   ? `<span>${escHtml(r.pos)}</span><br>`   : ''}
+          ${r.org   ? `<span>${escHtml(r.org)}</span><br>`   : ''}
           ${r.phone ? `📞 <span>${escHtml(r.phone)}</span><br>` : ''}
-          ${r.email ? `✉️ <span>${escHtml(r.email)}</span>` : ''}
+          ${r.email ? `✉️ <span>${escHtml(r.email)}</span>`  : ''}
         </div>
       </div>`;
     });
     html += `</div></div>`;
   }
 
-  html += `</div>`; /* end cv-inner */
-
+  html += `</div>`; // end cv-inner
   document.getElementById('cv-doc').innerHTML = html;
 }
 
-/* ==========================================
-   VALIDATION
-========================================== */
+/* ============================================================
+   FORM VALIDATION
+============================================================ */
 function validateForm() {
   let ok = true;
-
-  // Required personal fields
-  const reqFields = [
+  const fields = [
     ['pi-name',        'e-pi-name',        'Full name is required'],
     ['pi-phone',       'e-pi-phone',       'Phone number is required'],
     ['pi-email',       'e-pi-email',       'Email address is required'],
@@ -1340,11 +1872,11 @@ function validateForm() {
     ['pi-marital',     'e-pi-marital',     'Please select marital status'],
     ['pi-nationality', 'e-pi-nationality', 'Nationality is required'],
   ];
-  reqFields.forEach(([fid, eid]) => {
-    const v2 = val(fid);
+  fields.forEach(([fid, eid, msg]) => {
+    const v   = val(fid);
     const inp = document.getElementById(fid);
     const err = document.getElementById(eid);
-    if (!v2) {
+    if (!v) {
       ok = false;
       inp && inp.classList.add('err');
       err && err.classList.add('show');
@@ -1355,65 +1887,48 @@ function validateForm() {
   });
 
   // Email format
+  const emailVal = val('pi-email');
   const emailEl  = document.getElementById('pi-email');
   const emailErr = document.getElementById('e-pi-email');
-  const emailVal = val('pi-email');
   if (emailVal && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
     ok = false;
     emailEl  && emailEl.classList.add('err');
-    emailErr && emailErr.classList.add('show');
-    if (emailErr) emailErr.textContent = 'Please enter a valid email address';
+    emailErr && (emailErr.textContent = 'Please enter a valid email address', emailErr.classList.add('show'));
   }
 
   // Minimum 2 referees
   const refErr = document.getElementById('e-refs');
   if (state.refs.length < 2) {
     ok = false;
-    if (refErr) refErr.classList.add('show');
+    refErr && refErr.classList.add('show');
   } else {
-    if (refErr) refErr.classList.remove('show');
+    refErr && refErr.classList.remove('show');
   }
 
   return ok;
 }
 
-/* ==========================================
-   DOWNLOAD PDF
-========================================== */
+/* ============================================================
+   PDF DOWNLOAD
+============================================================ */
 async function doDownloadPDF() {
-  const name = val('pi-name');
-  if (!name) {
+  if (!val('pi-name')) {
     showAlert('⚠️', 'Nothing to Export', 'Please enter your name and fill in your details before downloading.', false);
     return;
   }
-
   showAlert('⏳', 'Generating PDF…', 'Please wait while we prepare your professional CV.', true);
-
-  // Animate progress bar
-  setTimeout(() => {
-    const bar = document.getElementById('a-prog-bar');
-    if (bar) bar.style.width = '95%';
-  }, 100);
+  setTimeout(() => { const b = document.getElementById('a-prog-bar'); if (b) b.style.width = '95%'; }, 100);
 
   try {
     const { jsPDF } = window.jspdf;
-    const cvDoc    = document.getElementById('cv-doc');
-
-    const canvas = await html2canvas(cvDoc, {
-      scale: 2,
-      useCORS: true,
-      backgroundColor: '#ffffff',
-      logging: false,
-    });
-
-    const imgData = canvas.toDataURL('image/jpeg', 0.95);
-    const pdf     = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-    const pdfW    = pdf.internal.pageSize.getWidth();
-    const pdfH    = pdf.internal.pageSize.getHeight();
-    const imgW    = canvas.width;
-    const imgH    = canvas.height;
-    const ratio   = pdfW / imgW;
-    const imgHmm  = imgH * ratio;
+    const cvDoc     = document.getElementById('cv-doc');
+    const canvas    = await html2canvas(cvDoc, { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false });
+    const imgData   = canvas.toDataURL('image/jpeg', 0.95);
+    const pdf       = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+    const pdfW = pdf.internal.pageSize.getWidth();
+    const pdfH = pdf.internal.pageSize.getHeight();
+    const ratio    = pdfW / canvas.width;
+    const imgHmm   = canvas.height * ratio;
 
     if (imgHmm <= pdfH) {
       pdf.addImage(imgData, 'JPEG', 0, 0, pdfW, imgHmm);
@@ -1426,10 +1941,10 @@ async function doDownloadPDF() {
       }
     }
 
-    const safeName = (name || 'CV').replace(/\s+/g, '-');
+    const safeName = (val('pi-name') || 'CV').replace(/\s+/g, '-');
     pdf.save(`${safeName}-CV.pdf`);
     closeAlert();
-    setTimeout(() => showAlert('✅', 'PDF Downloaded!', `"${safeName}-CV.pdf" has been saved to your downloads folder.`, false), 300);
+    setTimeout(() => showAlert('✅', 'PDF Downloaded!', `"${safeName}-CV.pdf" has been saved to your Downloads folder.`, false), 300);
   } catch (err) {
     console.error(err);
     closeAlert();
@@ -1437,82 +1952,68 @@ async function doDownloadPDF() {
   }
 }
 
-/* ==========================================
+/* ============================================================
    PRINT
-========================================== */
+============================================================ */
 function doPrint() {
-  const name = val('pi-name');
-  if (!name) {
+  if (!val('pi-name')) {
     showAlert('⚠️', 'Nothing to Print', 'Please fill in your details before printing.', false);
     return;
   }
   window.print();
 }
 
-/* ==========================================
+/* ============================================================
    WHATSAPP
-========================================== */
+============================================================ */
 function doWhatsApp() {
   const name = val('pi-name');
   const msg  = encodeURIComponent(`Hello Hafidh, I would like a professionally designed CV.${name ? ' My name is ' + name + '.' : ''}`);
-  window.open(`https://wa.me/255658502920?text=${msg}`, '_blank');
+  window.open(`https://wa.me/255658502920?text=${msg}`, '_blank', 'noopener');
 }
 
-/* ==========================================
+/* ============================================================
    RESET
-========================================== */
+============================================================ */
 function doReset() {
-  if (!confirm('Reset all data? This action cannot be undone.')) return;
-
-  // Clear all standard inputs & textareas
+  if (!confirm('Reset all data? This cannot be undone.')) return;
   document.querySelectorAll('input, textarea, select').forEach(el => {
-    if (el.tagName === 'SELECT') el.selectedIndex = 0;
-    else el.value = '';
+    el.tagName === 'SELECT' ? (el.selectedIndex = 0) : (el.value = '');
     el.classList.remove('err');
   });
-
-  // Remove error messages
   document.querySelectorAll('.err-msg').forEach(el => el.classList.remove('show'));
-
-  // Clear dynamic lists
   document.getElementById('exp-list').innerHTML = '';
   document.getElementById('ref-list').innerHTML = '';
   state.exp  = [];
   state.refs = [];
   expCount = 0;
   refCount = 0;
-
-  // Reset preview
   document.getElementById('cv-doc').innerHTML = `
-    <div class="empty-state" id="empty-state">
+    <div class="empty-state">
       <div class="empty-icon">📄</div>
       <div class="empty-text">Start filling in the form<br>and your CV will appear here in real-time</div>
     </div>`;
-
-  showAlert('✅', 'Reset Complete!', 'All fields have been cleared. You can start building a fresh CV.', false);
+  showAlert('✅', 'Reset Complete!', 'All fields have been cleared. You can now start a fresh CV.', false);
 }
 
-/* ==========================================
+/* ============================================================
    ALERT HELPERS
-========================================== */
+============================================================ */
 function showAlert(icon, title, msg, showProg) {
-  document.getElementById('a-icon').textContent   = icon;
-  document.getElementById('a-title').textContent  = title;
-  document.getElementById('a-msg').textContent    = msg;
-
+  document.getElementById('a-icon').textContent  = icon;
+  document.getElementById('a-title').textContent = title;
+  document.getElementById('a-msg').textContent   = msg;
   const progWrap = document.getElementById('a-prog');
   const progBar  = document.getElementById('a-prog-bar');
   const btn      = document.getElementById('a-btn');
-
   if (showProg) {
     progWrap.classList.add('show');
-    if (progBar) { progBar.style.width = '0%'; }
+    if (progBar) progBar.style.width = '0%';
     btn.style.display = 'none';
   } else {
     progWrap.classList.remove('show');
     btn.style.display = '';
   }
-
   document.getElementById('overlay').classList.add('show');
 }
 
@@ -1528,12 +2029,12 @@ document.getElementById('overlay').addEventListener('click', function(e) {
   if (e.target === this) closeAlert();
 });
 
-/* ==========================================
-   INIT — pre-add 2 referees as required
-========================================== */
+/* ============================================================
+   INITIALISE — pre-populate required entries
+============================================================ */
 (function init() {
-  addExp();      // start with 1 experience
-  addRef();      // start with 2 required refs
+  addExp(); // 1 default experience card
+  addRef(); // 2 required referee cards
   addRef();
 })();
 </script>
